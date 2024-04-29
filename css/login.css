@@ -8,8 +8,8 @@ div {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%, -5%);
-    padding: 80px;
+    transform: translate(-45%, -15%);
+    padding: 70px;
     border-radius: 10px;
     color: white
 }

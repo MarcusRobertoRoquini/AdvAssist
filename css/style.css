@@ -5,6 +5,13 @@ body {
     margin-left: 18px;
      
       }
+
+      h2{
+        padding: 10px;
+      }
+      p{
+        padding: 20px;
+      }
  
  
 header{
@@ -43,12 +50,12 @@ footer{
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
  
 .botaoSair {
-   margin-left: 920px;
+   margin-left: 915px;
 } 
