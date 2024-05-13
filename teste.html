@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id='tipo' required autofocus class="form-control" name="tipo">
+        <option value="">Empregos</option>
+        <option value="solicitante">Empregado, Empregado Doméstico e Trabalhador Avulso</option>
+        <option value="solicitante_2">Contribuinte Individual, Facultativo e Microempreendedor Individual - MEI</option>
+
+      </select>
+      <!--Se for escolhido SITUAÇÃO então chama um outro campo SELECT ... -->
+
+      <!--Campo Situaçao-->
+      <div class="input-group col-lg-10">
+        <div class="input-group-addon">
+
+        </div>
+        <select style='display: none;' id='situacao' type='text' class="form-control" name="situacao">
+          <option value="Aliquota 1">1.412,00 - 7.5%</option>
+          <option value="Aliquota 2">1.412,01 até 2.666,68 - 9%</option>
+          <option value="Aliquota 3">2.666,69 até 4.000,03 - 12%</option>
+          <option value="Aliquota 4">4.000,04 até 7.786,02 - 14%</option>
+        </select>
+      </div>
+
+      <div class="input-group col-lg-10">
+        <div class="input-group-addon">
+
+        </div>
+        <select style='display: none;' id='situacao2' type='text' class="form-control" name="situacao2">
+          <option value="Aliquota 1">1.412,00 - 5% () valor - 70,60</option>
+          <option value="Aliquota 2"> 1.412,00 - 11% () valor - 155,32</option>
+          <option value="Aliquota 3">1.412,00 - 12%() valor - 169,44</option>
+          <option value="Aliquota 4">1.412,00 até 7.786,02 valor entre 282,40 e 1.557,20</option>
+        </select>
+      </div>
+      <!--Fim Campo Situaçao-->
+
+      <!--Senão chama o campo INPUT -->
+
+
+      <script src="teste.js"></script>
+
+
+
+</body>
+</html>

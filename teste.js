@@ -26,4 +26,5 @@ tipo.addEventListener('change', function () {
         filtro.style.display = 'block';
     }
 
+    
 });
