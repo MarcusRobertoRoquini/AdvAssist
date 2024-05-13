@@ -2,7 +2,7 @@ body {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style:normal;
-    margin-left: 18px;
+    margin-left: 10pxpx;
      
       }
 
@@ -59,3 +59,9 @@ footer{
 .botaoSair {
    margin-left: 915px;
 } 
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+
