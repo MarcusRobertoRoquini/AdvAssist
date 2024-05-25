@@ -8,19 +8,16 @@
     <link rel="stylesheet" href="/css/login.css">
 </head>
 
-<body>
-    <div class="TelaLogin">
-        <img src="/imagens/logo_nome_direita-_1_.ico" alt="logo direito">
-        <h1>Login</h1>
-        <input type="text" placeholder=" Usuário" required>
-        <br><br>
-        <input type="password" placeholder="Senha" required>
-        <br><br>
-        <button onclick="window.location.href = '/site/pag_inicial.html';">Entrar</button>
-
-    </div>
+<div class="container">
+    <h1>Login</h1>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Usuário" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+    </form>
+</div>
     
-
+<script src="/site/main.js"></script>
 
 
 

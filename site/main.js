@@ -30,3 +30,36 @@ document.addEventListener("DOMContentLoaded", function () {
         limparResultado();
     });
 });
+
+// script.js
+const opcoes = document.querySelectorAll('input[type="radio"]');
+const campo1 = document.getElementById('campo1');
+const campo2 = document.getElementById('campo2');
+
+opcoes.forEach(opcao => {
+    opcao.addEventListener('change', () => {
+        if (opcao.value === 'opcao1') {
+            campo1.classList.remove('hidden');
+            campo2.classList.add('hidden');
+        } else if (opcao.value === 'opcao2') {
+            campo2.classList.remove('hidden');
+            campo1.classList.add('hidden');
+        }
+    });
+});
+
+// script.js
+document.getElementById('loginForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita o envio do formulário
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Simulação de validação (usuário e senha hardcoded)
+    if (username === 'usuario' && password === 'senha') {
+        alert('Login bem-sucedido! Redirecionando...');
+        window.location.href = '/site/pag_inicial.html'; // Redireciona para a página após o login
+    } else {
+        alert('Usuário ou senha incorretos. Tente novamente.');
+    }
+});
