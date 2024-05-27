@@ -1,28 +1,133 @@
 /* styles.css */
+body{
+    background-image: url('/imagens/predio.advassist2.jpg');
+    background-size: cover;
+    
+    
+}
 .container {
     max-width: 300px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background: linear-gradient(45deg, #162041, #2c3c6f);
+    opacity: 98%;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
+
 
 button {
-    width: 100%;
+    margin-top: 15px;
+    width: 40%;
     padding: 10px;
     background-color: #0074d9;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
+    
 }
+
+.botaosenha {
+    width: 30%;
+    
+    text-decoration:underline;
+    cursor: pointer;
+    float: bottom;
+    clear: top;
+}
+
+.group {
+    display: flex;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+    max-width: 250px;
+  }
+  
+  .input {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5rem;
+    padding-left: 3rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f8fafc;
+    color: #0d0c22;
+    transition: .5s ease;
+
+  }
+  
+  .input::placeholder {
+    color: #94a3b8;
+  }
+  
+  .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(129, 140, 248);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+  }
+  
+  .icon {
+    position: absolute;
+    left: 1rem;
+    fill: none;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .group {
+    padding: 8px;
+    display: flex;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+    max-width: 250px;
+    padding-bottom: 5px;
+  }
+  
+  .input2{
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5rem;
+    padding-left: 3rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f8fafc;
+    color: #0d0c22;
+    transition: .5s ease;
+
+  }
+  
+  .input2::placeholder {
+    color: #94a3b8;
+  }
+  
+  .input2:focus, input:hover {
+    outline: none;
+    border-color: rgba(129, 140, 248);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+  }
+  
+
+  .esqueci {
+    padding-top: 20px;
+  }
+  .esqueci a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    
+  }

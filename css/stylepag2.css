@@ -22,7 +22,7 @@ img {
 
 /* Estilos para a barra de navegação */
 .navbar {
-    background-color: #5f5f5fc3;
+    background-color: white;
     padding: 10px;
 }
 
@@ -51,7 +51,7 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f3f7fe;
     color: #000000;
-    border: none;
+    border-color: black;
     border-radius: 8px;
     width: 100px;
     height: 45px;
@@ -113,7 +113,7 @@ img {
 }
 
 footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -215,20 +215,4 @@ footer {
     );
   }
 
-  .container p {
-    font-size: large;
-    padding: 20px;
-  }
-
-  .formsalario{
-    padding: 10px;
-    float: left;
-    
-
-  }
-
-  .formdata{
-    padding: 10px;
-    float: left;
-    clear: left;
-  }
+ 
