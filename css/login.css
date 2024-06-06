@@ -10,8 +10,8 @@ body{
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    background: linear-gradient(45deg, #162041, #2c3c6f);
-    opacity: 98%;
+    background: linear-gradient(45deg, black, black);
+    opacity: 90%;
     border: 1px solid #ddd;
     border-radius: 10px;
     position: absolute;
