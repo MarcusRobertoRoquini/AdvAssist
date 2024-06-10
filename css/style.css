@@ -4,6 +4,9 @@ body {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+
+
+  
 }
   
   /* Estilo para o cabeçalho */
@@ -45,7 +48,7 @@ body {
   nav ul li {
     display: inline-block;
     margin-right:45px;
-    padding-left: 40px;
+    padding-left: 35px;
    
   }
 

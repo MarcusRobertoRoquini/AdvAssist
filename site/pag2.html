@@ -57,11 +57,31 @@
   <label for="mesesTrabalhados">Meses trabalhados:</label>
   <input type="number" id="mesesTrabalhados" min="0" max="12">
 
-  <button class="botaoEnviar" onclick="calcularRestituicao()">Calcular</button>
-
-  <button class="botaoLimpar"  onclick="limparCampos()">Limpar</button>
+  
 
   <p id="resultado"></p>
+
+  <label for="tipoTrabalho2">Selecione o tipo de trabalho:</label>
+  <select id="tipoTrabalho2">
+    <option value="">Selecione...</option>
+    <option value="empregado2">Empregado, Empregado Doméstico e Trabalhador Avulso</option>
+    <option value="facultativo2">Facultativo Baixa Renda e Microempreendedor Individual - MEI</option>
+    <option value="simplificado2">Plano Simplificado de Previdência</option>
+    <option value="mei-tac2">MEI Transportador Autônomo de Cargas - TAC (MEI Caminhoneiro)</option>
+    <option value="individual2">Contribuinte Individual, Facultativo e Microempreendedor Individual - MEI</option>
+  </select>
+
+  <label for="salario2"> Salário :</label>
+  <input type="number" id="salario2" min="0">
+
+  <label for="mesesTrabalhados2">Meses trabalhados:</label>
+  <input type="number" id="mesesTrabalhados2" min="0" max="12">
+
+  <button class="botaoEnviar"  onclick="calcularRestituicao2(), calcularRestituicao()">Calcular</button>
+
+  <button class="botaoLimpar"  onclick="limparCampos2(), limparCampos()">Limpar</button>
+
+  <p id="resultado2"></p>
 
   <script src="/site/main.js"></script>
 
