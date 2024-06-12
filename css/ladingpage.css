@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #151a4e;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #151a4e;
+    color: #d2d3da;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+ img {
+    width: 200px; /* Largura total do contêiner */
+    height: 50px; /* Altura desejada */
+    object-fit: cover; /* Redimensiona proporcionalmente e preenche o contêiner */
+    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #d2d3da;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+}
+
+.hero {
+    background-color: #151a4e;
+    color: #d2d3da;
+    text-align: center;
+    padding: 5rem 2rem;
+    margin-top: 70px; /* Espaço para o cabeçalho fixo */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero button {
+    background-color: #d2d3da;
+    color: #151a4e;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.info-section {
+    background-color: #ffffff;
+    color: #151a4e;
+    padding: 3rem 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#planos .planos {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#planos .plano {
+    background-color: #d2d3da;
+    color: #151a4e;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    margin: 1rem;
+}
+
+#planos .plano:hover {
+    transform: scale(1.05);
+}
+
+#planos .plano button {
+    background-color: #151a4e;
+    color: #d2d3da;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#planos .plano button:hover {
+    background-color: #000066;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-size: 1rem;
+}
+
+form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #d2d3da;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #151a4e;
+    color: #d2d3da;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #000066;
+}
+
+.wrapper {
+    --font-color-dark: #323232;
+    --font-color-light: #fff;
+    --bg-color: #fff;
+    --main-color: #323232;
+    --secondary-color: #505050;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 36px;
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 34px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 4px 4px var(--main-color);
+  }
+  
+  .option {
+    margin-right: 5px;
+    width: 80.5px;
+    height: 28px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 34px;
+    transition: 0.25s cubic-bezier(0, 0, 0, 1);
+  }
+  
+  .option:last-child {
+    margin-right: 4px;
+  }
+  
+  .option:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .option:hover .span {
+    color: var(--font-color-light);
+  }
+  
+  .input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .span {
+    color: var(--font-color-dark);
+  }
+  
+  .input:checked + .btn {
+    background-color: var(--main-color);
+    transition: 0.2s cubic-bezier(0, 0, 0, 1);
+  }
+  
+  .input:checked + .btn .span {
+    color: var(--font-color-light);
+    transition: 0.25s cubic-bezier(0, 0, 0, 1);
+  }
+  

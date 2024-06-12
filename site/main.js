@@ -99,3 +99,58 @@ function limparCampos2() {
 }
 
 
+function addFields() {
+    // Cria um novo elemento select
+    var newSelect = document.createElement("select");
+    var options = ["Selecione..","Empregado, Empregado Doméstico e Trabalhador Avulso", "Facultativo Baixa Renda e Microempreendedor Individual - MEI", "Plano Simplificado de Previdência", "MEI Transportador Autônomo de Cargas - TAC (MEI Caminhoneiro)", "Contribuinte Individual, Facultativo e Microempreendedor Individual - MEI"];
+    for(var i = 0; i < options.length; i++) {
+        var option = document.createElement("option");
+        option.value = options[i];
+        option.text = options[i];
+        newSelect.appendChild(option);
+    }
+
+    // Cria dois novos elementos de entrada do tipo number
+    var newInput1 = document.createElement("input");
+    newInput1.type = "number";
+    var newInput2 = document.createElement("input");
+    newInput2.type = "number";
+
+    // Adiciona os novos elementos ao contêiner
+    var container = document.getElementById("inputContainer");
+    container.appendChild(newSelect);
+    container.appendChild(newInput1);
+    container.appendChild(newInput2);
+
+    var label1 = document.createElement("label");
+    label1.textContent = "Salário: ";
+    var label2 = document.createElement("label");
+    label2.textContent = "Meses trabalhados: ";
+
+    // Adiciona os novos elementos ao contêiner
+    var container = document.getElementById("inputContainer");
+    container.appendChild(newSelect);
+    container.appendChild(label1);
+    container.appendChild(newInput1);
+    container.appendChild(label2);
+    container.appendChild(newInput2);
+}
+
+function removeFields() {
+    // Obtém o contêiner
+    var container = document.getElementById("inputContainer");
+
+    // Verifica se existem elementos para remover
+    if (container.childNodes.length > 0) {
+        // Remove o último select adicionado
+        container.removeChild(container.lastChild);
+        // Remove o último label adicionado
+        container.removeChild(container.lastChild);
+        // Remove o último input adicionado
+        container.removeChild(container.lastChild);
+        // Remove o último label adicionado
+        container.removeChild(container.lastChild);
+        // Remove o último input adicionado
+        container.removeChild(container.lastChild);
+    }
+}
